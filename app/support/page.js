@@ -11,19 +11,19 @@ const CHANNELS = [
     title: 'Email support',
     email: 'support@agentshift.ai',
     body: 'Product questions, bugs and onboarding help.',
-    fill: 'fill-lime',
+    fill: 'card-accent accent-lime',
   },
   {
     title: 'Talk to us',
     email: 'sales@agentshift.ai',
     body: 'Deployment models, procurement and security review.',
-    fill: 'fill-violet',
+    fill: 'card-accent accent-violet',
   },
   {
     title: 'Report a vulnerability',
     email: 'security@agentshift.ai',
     body: 'We respond to every report and will not pursue good-faith researchers.',
-    fill: 'fill-coral',
+    fill: 'card-accent accent-coral',
   },
 ]
 

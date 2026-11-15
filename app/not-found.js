@@ -17,11 +17,11 @@ export default function NotFound() {
       <section className="section">
         <div className="wrap">
           <div className="grid grid-3">
-            <Link className="card fill-lime" href="/platform">
+            <Link className="card card-accent accent-lime" href="/platform">
               <h2 className="h3">Platform</h2>
               <p className="body small">What Agentshift does and how it deploys.</p>
             </Link>
-            <Link className="card fill-violet" href="/pricing">
+            <Link className="card card-accent accent-violet" href="/pricing">
               <h2 className="h3">Pricing</h2>
               <p className="body small">Free, Team and Enterprise, with the limits spelled out.</p>
             </Link>

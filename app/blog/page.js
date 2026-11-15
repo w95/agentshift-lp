@@ -11,19 +11,19 @@ const UPCOMING = [
     tag: 'Evaluation',
     title: 'Building a task suite your agent cannot game',
     body: 'Why held-out tasks drawn from production beat synthetic benchmarks, and how to keep them honest as the agent improves.',
-    fill: 'fill-lime',
+    fill: 'card-accent accent-lime',
   },
   {
     tag: 'Deployment',
     title: 'Running agents inside your own VPC',
     body: 'The architecture behind private deployment: what crosses the boundary, what never does, and what that costs you in latency.',
-    fill: 'fill-violet',
+    fill: 'card-accent accent-violet',
   },
   {
     tag: 'Reliability',
     title: 'Budgets, ceilings and the looping agent problem',
     body: 'Guardrails that stop a stuck agent from spending an afternoon of compute on nothing, without killing legitimate long runs.',
-    fill: 'fill-coral',
+    fill: 'card-accent accent-coral',
   },
 ]
 

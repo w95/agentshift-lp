@@ -11,19 +11,19 @@ const PERKS = [
     n: '01',
     title: 'Platform credits',
     body: '12 months of Agentshift credits, sized to carry a real production workload rather than a demo.',
-    fill: 'fill-lime',
+    fill: 'card-accent accent-lime',
   },
   {
     n: '02',
     title: 'Hands-on onboarding',
     body: 'An engineer from our team helps you build your first evaluation suite and ship your first guarded agent.',
-    fill: 'fill-violet',
+    fill: 'card-accent accent-violet',
   },
   {
     n: '03',
     title: 'Shared Slack channel',
     body: 'Direct access to the people building the platform, with the same response targets as enterprise teams.',
-    fill: 'fill-blue',
+    fill: 'card-accent accent-blue',
   },
 ]
 
@@ -47,7 +47,7 @@ export default function StartupsPage() {
           <div className="grid grid-3">
             {PERKS.map((p) => (
               <div key={p.n} className={`card ${p.fill}`}>
-                <span className="badge" style={{ background: 'var(--panel)' }}>
+                <span className="badge">
                   {p.n}
                 </span>
                 <h2 className="h3">{p.title}</h2>

@@ -40,22 +40,22 @@ const FEATURES = [
   {
     title: 'Model agnostic',
     body: 'Anthropic, OpenAI, Google, or an open model you host. Swap providers per step without rewriting the agent.',
-    fill: 'fill-lime',
+    fill: 'card-accent accent-lime',
   },
   {
     title: 'Evals as a gate',
     body: 'Every agent change runs against your task suite. Regressions block the deploy instead of reaching a customer.',
-    fill: 'fill-violet',
+    fill: 'card-accent accent-violet',
   },
   {
     title: 'Replayable traces',
     body: 'Every run recorded step by step, with cost, latency and tool calls. Replay a failure against a new version.',
-    fill: 'fill-blue',
+    fill: 'card-accent accent-blue',
   },
   {
     title: 'Hard budgets',
     body: 'Step, spend and wall-clock ceilings per run. A looping agent gets stopped, not discovered on the invoice.',
-    fill: 'fill-coral',
+    fill: 'card-accent accent-coral',
   },
 ]
 
@@ -235,7 +235,7 @@ export default function HomePage() {
       {/* ------------------------------------------------------------ scale */}
       <section className="section">
         <div className="wrap">
-          <div className="box fill-violet pad-lg">
+          <div className="box card-accent accent-violet pad-lg">
             <div className="grid grid-2" style={{ alignItems: 'center' }}>
               <div>
                 <h2 className="h2 mb-12">Scale past the pilot</h2>

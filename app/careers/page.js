@@ -17,22 +17,22 @@ const HOW = [
   {
     title: 'Small team, wide scope',
     body: 'Everyone owns a surface end to end, from design through on-call. No tickets handed down a chain.',
-    fill: 'fill-lime',
+    fill: 'card-accent accent-lime',
   },
   {
     title: 'Remote, async-first',
     body: 'Written decisions, few meetings, overlapping hours between EU and US. We optimise for long uninterrupted blocks.',
-    fill: 'fill-violet',
+    fill: 'card-accent accent-violet',
   },
   {
     title: 'Paid work trial',
     body: 'Instead of a whiteboard gauntlet, we pay for a short scoped project on something we actually need.',
-    fill: 'fill-blue',
+    fill: 'card-accent accent-blue',
   },
   {
     title: 'Real equity',
     body: 'Meaningful ownership, a long exercise window, and a straight answer about the cap table in the first conversation.',
-    fill: 'fill-coral',
+    fill: 'card-accent accent-coral',
   },
 ]
 

@@ -18,7 +18,7 @@ export const PLANS = [
     unit: '/month',
     note: 'For agents in production',
     cta: { href: '/#start', label: 'Start a trial' },
-    fill: 'fill-lime',
+    fill: 'card-accent accent-lime',
     featured: true,
     items: [
       'Unlimited seats and workspaces',

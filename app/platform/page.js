@@ -11,19 +11,19 @@ const STAGES = [
     n: '01',
     title: 'Build',
     body: 'Compose agents from tools, retrieval and policies. Version every change, diff behaviour between versions, roll back in one click.',
-    fill: 'fill-lime',
+    fill: 'card-accent accent-lime',
   },
   {
     n: '02',
     title: 'Evaluate',
     body: 'Run agents against your own task suites before they reach a customer. Regressions block the deploy instead of surfacing in a support ticket.',
-    fill: 'fill-violet',
+    fill: 'card-accent accent-violet',
   },
   {
     n: '03',
     title: 'Operate',
     body: 'Full traces for every run with cost, latency and tool-call breakdowns. Replay any failed run step by step against a new agent version.',
-    fill: 'fill-blue',
+    fill: 'card-accent accent-blue',
   },
 ]
 
@@ -47,7 +47,7 @@ export default function PlatformPage() {
           <div className="grid grid-3">
             {STAGES.map((s) => (
               <div key={s.n} className={`card ${s.fill}`}>
-                <span className="badge" style={{ background: 'var(--panel)' }}>
+                <span className="badge">
                   {s.n}
                 </span>
                 <h2 className="h3">{s.title}</h2>
