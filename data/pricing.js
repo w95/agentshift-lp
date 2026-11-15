@@ -1,0 +1,45 @@
+export const PLANS = [
+  {
+    name: 'Developer',
+    price: 'Free',
+    note: 'For building and evaluating',
+    cta: { href: '/#start', label: 'Start free' },
+    fill: '',
+    items: [
+      '1 workspace, up to 3 seats',
+      '10,000 agent steps per month',
+      'Evaluation suites and run traces',
+      'Community Slack support',
+    ],
+  },
+  {
+    name: 'Team',
+    price: '$900',
+    unit: '/month',
+    note: 'For agents in production',
+    cta: { href: '/#start', label: 'Start a trial' },
+    fill: 'fill-lime',
+    featured: true,
+    items: [
+      'Unlimited seats and workspaces',
+      '500,000 agent steps included',
+      'Private VPC deployment',
+      'Correction loop and auto-proposed versions',
+      '99.9% uptime SLA, priority support',
+    ],
+  },
+  {
+    name: 'Enterprise',
+    price: 'Custom',
+    note: 'For regulated and air-gapped',
+    cta: { href: 'mailto:sales@agentshift.ai', label: 'Talk to us' },
+    fill: '',
+    items: [
+      'On-prem or air-gapped deployment',
+      'HIPAA with signed BAA, MSA and DPA',
+      'Zero-retention mode, custom data residency',
+      'Dedicated Slack channel and named engineer',
+      'Security review support and custom SLAs',
+    ],
+  },
+]
