@@ -1,16 +1,5 @@
-/**
- * Canonical origin for metadata, sitemap and robots.
- *
- * Vercel exposes the deployment host as NEXT_PUBLIC_VERCEL_URL (no protocol).
- * Set NEXT_PUBLIC_SITE_URL in the project's environment to pin the production
- * domain; preview deploys fall back to their own URL so canonicals and OG tags
- * never point at production from a preview.
- */
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.NEXT_PUBLIC_VERCEL_URL
-    ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-    : 'http://localhost:3000')
+/** Canonical origin, used by metadata, sitemap.xml and robots.txt. */
+export const SITE_URL = 'https://agentshift.ai'
 
 export const ROUTES = [
   { path: '/', priority: 1.0, changeFrequency: 'weekly' },

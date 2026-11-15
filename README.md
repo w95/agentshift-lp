@@ -69,11 +69,21 @@ Import the repository; the framework preset, build command and output directory
 are all detected automatically. Nothing else is required to get a working
 deploy.
 
+### Build settings
+
+`vercel.json` pins the framework preset to Next.js. It is there because this
+project previously hosted a static HTML site, so the Vercel project had an
+Output Directory of `public` left over, which fails a Next.js build with:
+
+> No Output Directory named "public" found after the Build completed.
+
+Keeping the preset in the repo means a fresh import or a reset project cannot
+drift back into that state.
+
 ### Environment variables
 
-| Variable | Required | Purpose |
-| --- | --- | --- |
-| `NEXT_PUBLIC_SITE_URL` | Recommended | Pins the canonical origin (e.g. `https://agentshift.ai`) used by metadata, `sitemap.xml` and `robots.txt`. Without it the build falls back to the per-deployment Vercel URL. |
+None required. The canonical origin is hardcoded in `data/site.js`; change it
+there if the domain changes.
 
 Preview deployments are served `Disallow: /` in `robots.txt`; only
 `VERCEL_ENV=production` is allowed to be indexed.
